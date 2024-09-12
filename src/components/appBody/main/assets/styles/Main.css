@@ -1,0 +1,12 @@
+.main {
+  flex: 0.5;
+  min-width: 400px;
+}
+
+@media (max-width: 992px) {
+  .main {
+    width: 100%;
+    min-width: 10px;
+    margin-bottom: 10px;
+  }
+}

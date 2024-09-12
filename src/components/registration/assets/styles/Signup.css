@@ -1,0 +1,135 @@
+.signup {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .signup {
+    width: 240px;
+    padding: 5px;
+  }
+}
+
+.signup > h2 {
+  margin-bottom: 15px;
+  font-size: large;
+  color: rgb(0, 0, 0, 0.8);
+}
+
+.signup > form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.age_radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.signup > form > input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  margin-top: 18px;
+  color: rgb(0, 0, 0, 0.95);
+  outline: none;
+  background: none;
+}
+
+.passwordChecker:focus {
+  background: rgba(231, 31, 31, 0.548);
+}
+
+.signup > form > input:focus {
+  border-color: rgb(40, 167, 70);
+}
+
+.signup > form > .more_details > input {
+  border: none;
+  border-bottom: solid 1px;
+  margin: 5px;
+}
+
+.signup > form > .more_details {
+  /* margin-top: -15px; */
+  margin-bottom: 10px;
+}
+
+.more_info {
+  font-size: 14px;
+}
+
+.signup > button {
+  width: 180px;
+  padding: 10px 0px;
+  margin-top: 25px;
+  border-radius: 50px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: rgb(40, 167, 70);
+  color: white;
+  border: none;
+}
+.signup > button:disabled {
+  background-color: rgb(157, 235, 175);
+}
+
+.signup > button:active {
+  background-color: rgb(158, 2, 2);
+}
+
+.ageChoices {
+  margin-top: 17px;
+  width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.custom_checkbox_cont {
+  display: flex;
+  width: 45%;
+  margin: 10px 0px;
+}
+
+.checkbox_cont {
+  position: relative;
+  margin-right: 30px;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.custom_checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+  border: 2px solid rgba(8, 8, 8, 0.45);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.checkbox:checked ~ .custom_checkbox {
+  border: 4px solid rgb(40, 167, 70);
+}
+
+.checkbox_text {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.75);
+}

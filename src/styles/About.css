@@ -1,0 +1,32 @@
+.about {
+  position: absolute;
+  top: 10%;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.about > p {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .about {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.contacts > h3 {
+  text-decoration: underline;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100vh;
+}

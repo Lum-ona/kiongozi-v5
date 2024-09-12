@@ -1,0 +1,141 @@
+.manifesto_cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.manifesto_update_cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.manifesto_input {
+    width: 650px;
+    padding: 30px 0px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.manifesto_input>span {
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    align-items: center;
+}
+
+.manifesto_input>span>span {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.manifesto_textarea {
+    width: 100%;
+    height: 140px;
+    padding: 7.5px;
+    border: 1px solid rgba(0, 0, 0, 0.55);
+    resize: none;
+    outline: none;
+}
+
+.manifesto_textarea:focus {
+    border-color: rgb(40, 167, 70);
+}
+
+.manifesto_submit_btn {
+    max-width: 180px;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: rgb(40, 167, 70);
+    color: white;
+    border: none;
+    align-self: flex-end;
+}
+
+.manifesto_submit_btn:hover {
+    background-color: rgb(2, 124, 30);
+}
+
+.manifesto_submit_btn:active {
+    background-color: rgb(158, 2, 2);
+}
+
+@media screen and (max-width:800px) {
+    .manifesto_input {
+        width: 100%;
+        padding: 25px;
+        padding-top: 0px;
+    }
+}
+
+.manifesto_text_cont {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.manifesto_text_cont>span {
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    align-items: center;
+}
+
+.manifesto_text_cont>span>span {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.edit_manifesto_btn {
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: rgb(40, 167, 70);
+    color: white;
+    border: none;
+}
+
+.edit_manifesto_btn:hover {
+    background-color: rgb(2, 124, 30);
+}
+
+.edit_manifesto_btn:active {
+    background-color: rgb(158, 2, 2);
+}
+
+.manifesto_text {
+    padding-top: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+@media screen and (max-width:450px) {
+    .manifesto_textarea {
+        height: 165px;
+    }
+    .manifesto_submit_btn {
+        max-width: 165px;
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    .edit_manifesto_btn {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+}

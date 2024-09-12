@@ -1,0 +1,138 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 1030;
+}
+
+.post_top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.post_top span {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.post_text_area {
+    flex: 1;
+    min-height: 20px;
+    max-height: 80px;
+    margin-left: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: none;
+    color: rgba(0, 0, 0, 0.675);
+}
+
+.post_top span:nth-child(2) {
+    position: relative;
+    margin: 10px 0px;
+    align-self: center;
+    width: fit-content;
+    max-height: 250px;
+}
+
+.remove_image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    padding: 1px;
+    padding-bottom: 3px;
+    padding-left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(158, 2, 2);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-size: 17px;
+    z-index: 123;
+    border: none;
+    outline: none;
+}
+
+.remove_image:active {
+    background-color: #660101;
+}
+
+.post_top>span img {
+    max-width: 100%;
+    max-height: 250px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.post_bottom {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post_bottom>label {
+    cursor: pointer;
+    color: rgb(40, 167, 70);
+    display: flex;
+    align-items: center;
+}
+
+.post_bottom>label svg {
+    margin-right: 7px;
+}
+
+.post_bottom>label:hover,
+.post_bottom>label:hover>svg {
+    color: rgb(2, 124, 30);
+}
+
+.post_bottom>label:active,
+.post_bottom>label:active svg {
+    color: rgb(158, 2, 2);
+}
+
+.post_image {
+    display: none;
+}
+
+.file_upload {
+    border-radius: 7px;
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    padding: 7px 18px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(40, 167, 70);
+    border: none;
+    outline: none;
+}
+
+.file_upload:hover {
+    background-color: rgb(2, 124, 30);
+}
+
+.file_upload:active {
+    background-color: rgb(158, 2, 2);
+}
+
+@media (max-width: 700px) {
+    .post_top>span>div:nth-child(1) {
+        height: 30px;
+        width: 30px;
+    }
+    .post_text_area {
+        font-size: 14px;
+        min-width: 20px;
+    }
+}

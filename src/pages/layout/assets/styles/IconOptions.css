@@ -1,0 +1,21 @@
+.iconOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.iconOptions>p {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.iconOptions>.icons {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.iconOptions>.icons:hover {
+    color: rgba(0, 0, 0, 0.75);
+}

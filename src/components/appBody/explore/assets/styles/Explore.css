@@ -1,0 +1,5 @@
+@media (min-width: 900px) {
+  .stats_nav {
+    display: none;
+  }
+}

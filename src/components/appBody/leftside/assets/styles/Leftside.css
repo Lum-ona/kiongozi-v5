@@ -1,0 +1,31 @@
+.leftside {
+  flex: 0.3;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px 100px;
+  height: 40vw;
+  max-width: 20vw;
+  position: sticky;
+  top: 100px;
+}
+.leftside > h4 {
+  font-weight: 800;
+  font-size: 20px;
+  background-image: url("../images/kenya-flag.jpg");
+  background-position: center;
+  background-size: contain;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.leftside .graphs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .leftside {
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+.displayUsersBucket {
+  margin-left: 10px;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  min-width: 120px;
+  max-height: 160px;
+}
+.usernames {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.countyname {
+  margin-top: -20px;
+  font-size: 12px;
+}
+.aspirant {
+  margin-top: -5px;
+  font-size: 12px;
+}
+
+.bttn {
+  margin-top: -10px;
+  border: 4px;
+  border-radius: 15px;
+  color: white;
+  background-color: rgb(40, 167, 70);
+  font-size: 12px;
+}

@@ -1,0 +1,252 @@
+.header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 12345678;
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+.header_search_mobile {
+  display: none;
+  position: relative;
+}
+
+.header_left {
+  flex: 0.5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_left > a {
+  text-decoration: none;
+}
+
+.header_left > a > h1 {
+  background-image: url("../images/kenya-flag.jpg");
+  background-position: center;
+  background-size: contain;
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 0px;
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.header_search > form > input {
+  margin-left: 20px;
+  height: 35px;
+  padding: 5px 12px;
+  width: 250px;
+  border-radius: 50px;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.header_search > form > input:focus {
+  border-color: rgb(40, 167, 70);
+}
+
+.header > nav {
+  flex: 0.4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlink {
+  width: 80%;
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navlink > a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav_icon {
+  margin-bottom: 7px;
+}
+
+.login_options_cont_topbar {
+  width: auto;
+  display: flex;
+}
+
+.guest_buttons {
+  display: flex;
+}
+
+.guest_buttons > button {
+  min-height: 40px;
+}
+
+.guest_buttons > .join_btn {
+  border-radius: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 0px 15px;
+  text-transform: uppercase;
+  background: none;
+  color: rgb(40, 167, 70);
+  border: 1px solid rgb(40, 167, 70);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.guest_buttons > .join_btn:hover {
+  color: rgb(2, 124, 30);
+  border-color: rgb(2, 124, 30);
+}
+
+.guest_buttons > .join_btn:active {
+  color: #fff;
+  border-color: rgb(158, 2, 2);
+  background-color: rgb(158, 2, 2);
+}
+
+.guest_buttons > .login_btn {
+  border-radius: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 0px 15px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(40, 167, 70);
+  border: none;
+  outline: none;
+}
+
+.guest_buttons > .login_btn:hover {
+  background-color: rgb(2, 124, 30);
+}
+
+.guest_buttons > .login_btn:active {
+  background-color: rgb(158, 2, 2);
+}
+
+.profile-options:hover {
+  color: black;
+}
+@media (max-width: 900px) {
+  .header {
+    justify-content: space-between;
+  }
+  .header > nav {
+    flex: none;
+  }
+  .header > nav > .navlink {
+    display: none;
+  }
+  .header_left {
+    flex: 0.75;
+    justify-content: space-around;
+  }
+  .login_options_cont_topbar {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    justify-content: space-between;
+  }
+  .header_left {
+    justify-content: center;
+  }
+  .header_left > h1 {
+    font-size: 24px;
+  }
+  .header_search {
+    display: none;
+  }
+  .header_search_mobile {
+    display: flex;
+  }
+  .profile_icon {
+    font-size: 33px !important;
+  }
+}
+
+.bottom_navbar {
+  bottom: 0px;
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: -3px 0px 7px rgba(0, 0, 0, 0.15);
+  color: gray;
+  background-color: white;
+  z-index: 12345678;
+}
+
+@media (min-width: 900px) {
+  .bottom_navbar {
+    display: none;
+  }
+}
+
+.bottom_navbar > .navlink {
+  width: 100%;
+  max-width: none;
+  justify-content: space-around;
+}
+
+.bottom_navbar > .navlink > .nav_icon {
+  margin-bottom: 0px;
+}
+
+.login_options_cont_bottombar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 6px 0px;
+  margin-bottom: 3px;
+  background-color: #fff;
+}
+
+.profileMenu {
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  width: 120px;
+  top: 100%;
+  z-index: 1030;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  min-width: 9%;
+}
+
+.profileMenu > p:hover,
+.profileMenu > .profile-options:hover {
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: lightgray;
+}

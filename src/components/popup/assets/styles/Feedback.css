@@ -1,0 +1,25 @@
+.feedback {
+  background-color: white;
+  z-index: 1;
+  position: absolute;
+  top: -38%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+.feedback-btn {
+  width: 180px;
+  padding: 10px 0px;
+  margin-top: 5px;
+  border-radius: 50px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: rgb(40, 167, 70);
+  color: white;
+  border: none;
+}

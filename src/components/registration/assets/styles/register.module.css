@@ -1,0 +1,115 @@
+.selectDropDown {
+  cursor: pointer;
+  padding: 12px 10px;
+  box-sizing: content-box;
+  font-size: 16px;
+  margin: 1px auto;
+  width: 400px;
+  outline: none;
+  border: none;
+  color: rgb(158, 2, 2);
+  background-color: rgba(255, 255, 255, 0.452);
+}
+
+.ageChoices {
+  width: 420px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.custom_checkbox_cont {
+  display: flex;
+  width: 45%;
+  margin: 10px 0px;
+}
+
+.checkbox_cont {
+  position: relative;
+  margin-right: 30px;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.custom_checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.35);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.checkbox:checked ~ .custom_checkbox {
+  border: 5px solid rgb(158, 2, 2);
+}
+
+.checkbox_text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.profile_pic_cont {
+  height: 120px;
+  width: 120px;
+  margin: 25px 0px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.profile_pic_cont img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile_pic_cont label {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.profile_pic_cont label:active {
+  background-color: rgba(158, 2, 2, 0.342);
+}
+
+.profile_pic_input {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .header > h2 {
+    width: 100%;
+    padding: 0px 7.5%;
+    box-sizing: border-box;
+  }
+  .selectDropDown {
+    width: 80%;
+  }
+  .ageChoices {
+    width: 80%;
+    padding-right: 20px;
+  }
+  .custom_checkbox_cont {
+    width: 47%;
+  }
+  .checkbox_text {
+    font-size: 12px;
+  }
+}

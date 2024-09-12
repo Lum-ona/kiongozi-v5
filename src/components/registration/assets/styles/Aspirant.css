@@ -1,0 +1,117 @@
+.aspirant {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aspirant > span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.aspirant > form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.back_btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: rgb(40, 167, 70);
+  cursor: pointer;
+}
+.back_btn:hover {
+  color: #111;
+}
+.profile_pic_cont {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 2px solid rgb(40, 167, 70);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.profile_pic_cont img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile_pic_cont label {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.profile_pic_cont label:active {
+  background-color: rgba(40, 167, 70, 0.39);
+}
+
+.profile_pic_input {
+  display: none;
+}
+
+.aspirant > form > input {
+  width: 100%;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.95);
+  outline: none;
+  background: none;
+}
+
+.aspirant > form > input:focus {
+  border-color: rgb(40, 167, 70);
+}
+
+.selectDropDown {
+  cursor: pointer;
+  margin-top: 18px;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: none !important;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.95);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.452);
+}
+
+.aspirant > form > button {
+  width: 180px;
+  padding: 10px 0px;
+  margin-top: 25px;
+  border-radius: 50px;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  background-color: rgb(40, 167, 70);
+  color: white;
+  border: none;
+}
+
+.aspirant > button:hover {
+  background-color: rgb(2, 124, 30);
+}
+
+.aspirant > button:active {
+  background-color: rgb(158, 2, 2);
+}

@@ -1,0 +1,59 @@
+.bio_cont {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bio_title>span {
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    align-items: center;
+}
+
+.bio_title>span>span {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.bio_info {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal_info,
+.location_info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.personal_info>span,
+.location_info>span {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.info_category {
+    width: 130px;
+    font-weight: 600;
+}
+
+.info_data {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+@media screen and (max-width:650px) {
+    .bio_info {
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .personal_info,
+    .location_info {
+        width: 100%;
+    }
+}
